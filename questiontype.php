@@ -126,6 +126,7 @@ class qtype_ddmatch extends question_type {
         $question->stems = array();
         $question->choices = array();
         $question->right = array();
+        $question->choiceformat = array();
 
         foreach ($questiondata->options->subquestions as $matchsub) {
             $ans = $matchsub->answertext;
